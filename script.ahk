@@ -16,3 +16,4 @@
 !c::SendInput,^c
 !s::SendInput,^s
 !v::SendInput,^v
+CapsLock::Ctrl
