@@ -1,8 +1,8 @@
 #SingleInstance Force
 !k::SendInput,{UP}
 !j::SendInput,{DOWN}
-!h::SendInput,^{LEFT}
-!l::SendInput,^{RIGHT} 
+!h::SendInput,{LEFT}
+!l::SendInput,{RIGHT} 
 !BS::SendInput,^{BS}
 
 ^!k::SendInput,^{UP}
