@@ -10,6 +10,11 @@
 ^!h::SendInput,^{LEFT}
 ^!l::SendInput,^{RIGHT}
 
+!<+k::SendInput,+{UP}
+!<+j::SendInput,+{DOWN}
+!<+h::SendInput,+{LEFT}
+!<+l::SendInput,+{RIGHT}
+
 !w::SendInput,!{F4}
 !a::SendInput,^a
 !z::SendInput,^z
@@ -19,4 +24,4 @@
 !v::SendInput,^v
 CapsLock::Ctrl
 
-+>::LAlt
+>+::LAlt
