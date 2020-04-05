@@ -1,3 +1,4 @@
+#SingleInstance Force
 !k::SendInput,{UP}
 !j::SendInput,{DOWN}
 !h::SendInput,^{LEFT}
@@ -17,3 +18,5 @@
 !s::SendInput,^s
 !v::SendInput,^v
 CapsLock::Ctrl
+
++>::LAlt
