@@ -33,9 +33,9 @@ AppsKey::RShift
 >+g::SendInput,\gamma
 
 >+h::SendInput,\stackrel{}{\\to}
->+j::SendInput,"$$$$", moveLeft:, moveLeft:);
->+k::SendInput,"", "moveLeft:
->+l::SendInput,"_{}", "moveLeft:
+>+j::SendInput,$$$${left 2}
+>+k::SendInput,""{left}
+>+l::SendInput,_{}{left}
 >+;::SendInput,"$$", moveLeft:);
 >+\'::SendInput,"()", moveLeft:);
 
