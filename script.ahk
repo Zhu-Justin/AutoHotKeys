@@ -36,12 +36,12 @@ AppsKey::RShift
 >+j::SendInput,$$$${left 2}
 >+k::SendInput,{left}
 >+l::SendInput,_{}{left}
->+;::SendInput,$${left};
->+\'::SendInput,(){left};
+>+;::SendInput,$${left}
+>+\'::SendInput,(){left}
 
 /* Top Row */
->+q::SendInput,"&=
->+w::SendInput,"&
+>+q::SendInput,&=
+>+w::SendInput,&
 /* e is not mappable */
 >+r::SendInput,\rho
 >+t::SendInput,\theta
@@ -51,16 +51,16 @@ AppsKey::RShift
 >+o::SendInput,\omega
 >+p::SendInput,\pi
 >+[::SendInput,\subseteq
->+]::SendInput,\lvert\\rvert", "moveLeft:","moveLeft:","moveLeft:","moveLeft:","moveLeft:", "moveLeft:
+>+]::SendInput,\lvert\\rvert", "{left}","{left}","{left}","{left}","{left}", "{left}
 >+\\::SendInput,\mid
 
 /* Bottom Row */
 >+z::SendInput,\phi
 >+x::SendInput,\chi
->+c::SendInput,\vec{}", "moveLeft:
->+v::SendInput,\hat{}", "moveLeft:
+>+c::SendInput,\vec{}", "{left}
+>+v::SendInput,\hat{}", "{left}
 /* b is not mappable */
-/* >+b::SendInput,\bar{  }", "moveLeft:", "moveLeft: */
+/* >+b::SendInput,\bar{  }", "{left}", "{left} */
 /* n is not mappable */
 >+m::SendInput,\mu
 >+,::SendInput,\\\", "insertNewline:", "moveDown:
@@ -97,13 +97,13 @@ AppsKey::RShift
 
 /* Ctrl-Option-LaTeX */
 
->+{::SendInput,\{  \\}", "moveLeft:", "moveLeft:", "moveLeft:
->+}::SendInput,\overbrace{  }", "moveLeft:","moveLeft:
->+:::SendInput,"[]", "moveLeft:
->+\"::SendInput,"{}", "moveLeft:
+>+{::SendInput,\{  \\}", "{left}", "{left}", "{left}
+>+}::SendInput,\overbrace{  }", "{left}","{left}
+>+:::SendInput,"[]", "{left}
+>+\"::SendInput,"{}", "{left}
 >+<::SendInput,\leq
 >+>::SendInput,\geq
->+?::SendInput,\text{  }", "moveLeft:", "moveLeft:
+>+?::SendInput,\text{  }", "{left}", "{left}
 
 >+A::SendInput,\forall
 /* opt-shift-b not mappable */
@@ -111,27 +111,25 @@ AppsKey::RShift
 >+D::SendInput,\int
 >+E::SendInput,\varepsilon
 /* opt-shift-f not mappable */
->+G::SendInput,\frac{  }{  }", "moveLeft:", "moveLeft:", "moveLeft:", "moveLeft:", "moveLeft:", "moveLeft:
+>+G::SendInput,\frac{  }{  }", "{left}", "{left}", "{left}", "{left}", "{left}", "{left}
 >+H::SendInput,\sim
 >+I::SendInput,\infty
 >+J::SendInput,\left(
-/* >+J::SendInput,\left(  \\right)", "moveLeft:","moveLeft:","moveLeft:","moveLeft:","moveLeft:","moveLeft:","moveLeft:","moveLeft: */
+/* >+J::SendInput,\left(  \\right)", "{left}","{left}","{left}","{left}","{left}","{left}","{left}","{left} */
 >+K::SendInput,\right)
-/* >+K::SendInput,\lim_{n\\to\\infty}", "moveLeft: */
->+L::SendInput,"^{}", "moveLeft:
+/* >+K::SendInput,\lim_{n\\to\\infty}", "{left} */
+>+L::SendInput,"^{}", "{left}
 >+M::SendInput,"_{ i = 1 }^{ n }
 >+N::SendInput,"$$X_{1},\\cdots,X_{n}$$
 >+O::SendInput,"^{\\ast}
 >+P::SendInput,\prod
 >+Q::SendInput,\implies
->+R::SendInput,\mathbf{  }", "moveLeft:","moveLeft:
+>+R::SendInput,\mathbf{  }", "{left}","{left}
 >+S::SendInput,\sum
 >+T::SendInput,\tau
 >+U::SendInput,\bigcup
->+V::SendInput,\sqrt{}", "moveLeft:
+>+V::SendInput,\sqrt{}", "{left}
 >+W::SendInput,\iff
 >+X::SendInput,\exists
 >+Y::SendInput,\partial
->+Z::SendInput,\mathbb{  }", "moveLeft:", "moveLeft:
-}
->+a::SendInput,\alpha
+>+Z::SendInput,\mathbb{  }", "{left}", "{left}
