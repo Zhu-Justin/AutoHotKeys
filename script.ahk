@@ -35,19 +35,18 @@ AppsKey::RShift
 >+h::SendInput,\stackrel{}{\\to}
 >+j::SendInput,$$$${left 2}
 >+k::SendInput,{left}
->+l::SendInput,_{}{left}
+>+l::SendInput,_{`{}{`}}{left}
 >+;::SendInput,$${left}
->+\'::SendInput,(){left}
+>+'::SendInput,(){left}
 
-/* Top Row */
 >+q::SendInput,&=
 >+w::SendInput,&
-/* e is not mappable */
+	; e is not unmappable
 >+r::SendInput,\rho
 >+t::SendInput,\theta
 >+y::SendInput,\lambda
-/* u is not mappable */
-/* i is not mappable */
+	; u is not mappable
+	; i is not mappable
 >+o::SendInput,\omega
 >+p::SendInput,\pi
 >+[::SendInput,\subseteq
@@ -57,8 +56,8 @@ AppsKey::RShift
 /* Bottom Row */
 >+z::SendInput,\phi
 >+x::SendInput,\chi
->+c::SendInput,\vec{}", "{left}
->+v::SendInput,\hat{}", "{left}
+>+c::SendInput,\vec{`{}{`}}{left}
+>+v::SendInput,\hat{`{}{`}}{left}
 /* b is not mappable */
 /* >+b::SendInput,\bar{  }", "{left}", "{left} */
 /* n is not mappable */
@@ -99,11 +98,11 @@ AppsKey::RShift
 
 >+{::SendInput,\{  \\}", "{left}", "{left}", "{left}
 >+}::SendInput,\overbrace{  }", "{left}","{left}
->+:::SendInput,"[]", "{left}
->+\"::SendInput,"{}", "{left}
+>+:::SendInput,[]{left}
+>+\"::SendInput,{`{}{`}}{left}
 >+<::SendInput,\leq
 >+>::SendInput,\geq
->+?::SendInput,\text{  }", "{left}", "{left}
+>+?::SendInput,\text{`{}  {`}}{left 2}
 
 >+A::SendInput,\forall
 /* opt-shift-b not mappable */
