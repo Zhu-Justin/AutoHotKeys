@@ -26,6 +26,7 @@
 CapsLock::Ctrl
 
 AppsKey::RShift
+RShift::RCtrl
 
 	; Home Row
 >+a::SendInput,\alpha
@@ -54,7 +55,8 @@ AppsKey::RShift
 >+p::SendInput,\pi
 >+[::SendInput,\subseteq
 >+]::SendInput,\lvert\\rvert", "{left}","{left}","{left}","{left}","{left}", "{left}
->+\\::SendInput,\mid
+>+\::SendInput,\mid
+
 
 	; Bottom Row
 >+z::SendInput,\phi
@@ -66,7 +68,7 @@ AppsKey::RShift
 >+m::SendInput,\mu
 >+,::SendInput,\\\", "insertNewline:", "moveDown:
 >+.::SendInput,\in
->+/::SendInput,"%
+>+/::SendInput,{`%}
 
 	; Num Row
 >+1::SendInput,\begin{aligned}
@@ -99,37 +101,37 @@ AppsKey::RShift
 
 >+{::SendInput,\{  \\}", "{left}", "{left}", "{left}
 >+}::SendInput,\overbrace{  }", "{left}","{left}
->+:::SendInput,[]{left}
->+\"::SendInput,{`{}{`}}{left}
+>+<+;::SendInput,[]{left}
+>+"::SendInput,[]{left}
 >+<::SendInput,\leq
 >+>::SendInput,\geq
 >+?::SendInput,\text{`{}  {`}}{left 2}
 
->+A::SendInput,\forall
+<+>^a::SendInput,\forall
 	; /* opt-shift-b not mappable */
->+C::SendInput,\bigcap
->+D::SendInput,\int
->+E::SendInput,\varepsilon
+<+>^c::SendInput,\bigcap
+<+>^d::SendInput,\int
+<+>^e::SendInput,\varepsilon
 	; /* opt-shift-f not mappable */
->+G::SendInput,\frac{  }{  }", "{left}", "{left}", "{left}", "{left}", "{left}", "{left}
->+H::SendInput,\sim
->+I::SendInput,\infty
->+J::SendInput,\left(
+<+>^G::SendInput,\frac{  }{  }", "{left}", "{left}", "{left}", "{left}", "{left}", "{left}
+<+>^H::SendInput,\sim
+<+>^I::SendInput,\infty
+<+>^J::SendInput,\left(
 	; /* >+J::SendInput,\left(  \\right)", "{left}","{left}","{left}","{left}","{left}","{left}","{left}","{left} */
->+K::SendInput,\right)
+<+>^K::SendInput,\right)
 	; /* >+K::SendInput,\lim_{n\\to\\infty}", "{left} */
->+L::SendInput,"^{}", "{left}
->+M::SendInput,"_{ i = 1 }^{ n }
->+N::SendInput,"$$X_{1},\\cdots,X_{n}$$
->+O::SendInput,"^{\\ast}
->+P::SendInput,\prod
->+Q::SendInput,\implies
->+R::SendInput,\mathbf{  }", "{left}","{left}
->+S::SendInput,\sum
->+T::SendInput,\tau
->+U::SendInput,\bigcup
->+V::SendInput,\sqrt{}", "{left}
->+W::SendInput,\iff
->+X::SendInput,\exists
->+Y::SendInput,\partial
->+Z::SendInput,\mathbb{  }", "{left}", "{left}
+<+>^L::SendInput,"^{}", "{left}
+<+>^M::SendInput,"_{ i = 1 }^{ n }
+<+>^N::SendInput,"$$X_{1},\\cdots,X_{n}$$
+<+>^O::SendInput,"^{\\ast}
+<+>^P::SendInput,\prod
+<+>^Q::SendInput,\implies
+<+>^R::SendInput,\mathbf{  }", "{left}","{left}
+<+>^S::SendInput,\sum
+<+>^T::SendInput,\tau
+<+>^U::SendInput,\bigcup
+<+>^V::SendInput,\sqrt{}", "{left}
+<+>^W::SendInput,\iff
+<+>^X::SendInput,\exists
+<+>^Y::SendInput,\partial
+<+>^Z::SendInput,\mathbb{  }", "{left}", "{left}
