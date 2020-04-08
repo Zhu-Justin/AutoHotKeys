@@ -34,10 +34,10 @@ AppsKey::RShift
 
 >+h::SendInput,\stackrel{}{\\to}
 >+j::SendInput,$$$${left 2}
->+k::SendInput,""{left}
+>+k::SendInput,{left}
 >+l::SendInput,_{}{left}
->+;::SendInput,"$$", moveLeft:);
->+\'::SendInput,"()", moveLeft:);
+>+;::SendInput,$${left};
+>+\'::SendInput,(){left};
 
 /* Top Row */
 >+q::SendInput,"&=
