@@ -35,9 +35,9 @@ RShift::RCtrl
 >+f::SendInput,*
 >+g::SendInput,\gamma
 
->+h::SendInput,\stackrel{}{\\to}
+>+h::SendInput,\to
 >+j::SendInput,$$$${left 2}
->+k::SendInput,{left}
+>+k::SendInput,\lim_{`{}n\to\infty{`}}{left}
 >+l::SendInput,_{`{}{`}}{left}
 >+;::SendInput,$${left}
 >+'::SendInput,(){left}
@@ -54,27 +54,29 @@ RShift::RCtrl
 >+o::SendInput,\omega
 >+p::SendInput,\pi
 >+[::SendInput,\subseteq
->+]::SendInput,\lvert\\rvert", "{left}","{left}","{left}","{left}","{left}", "{left}
->+\::SendInput,\mid
+>+]::SendInput,\\{down}
+>+\::SendInput,\\{down}
+>+|::SendInput,\mid
+
 
 
 	; Bottom Row
->+z::SendInput,\phi
+>+z::SendInput,\varphi
 >+x::SendInput,\chi
->+c::SendInput,\vec{`{}{`}}{left}
->+v::SendInput,\hat{`{}{`}}{left}
+>+c::SendInput,\bigcap{`{}{`}}{left}
+>+v::SendInput,\mathbf{`{}{`}}{left}
 	; b is not mappable
 	; n is not mappable
 >+m::SendInput,\mu
->+,::SendInput,\\\", "insertNewline:", "moveDown:
+>+,::SendInput,\cdots
 >+.::SendInput,\in
 >+/::SendInput,{`%}
 
 	; Num Row
->+1::SendInput,\begin{aligned}
->+2::SendInput,\end{aligned}
->+3::SendInput,\begin{cases}
->+4::SendInput,\end{cases}
+>+1::SendInput,\begin{aligned}`n`n\end{aligned}{up}
+>+2::SendInput,\begin{cases}`n`n\end{cases}{up}
+>+3::SendInput,\begin{bmatrix}`n`n\end{bmatrix}{up}
+>+4::SendInput,\begin{vmatrix}`n`n\end{vmatrix}{up}
     ; /* >+5::SendInput,\epsilon */
     ; /* >+6::SendInput,\zeta */
     ; /* >+7::SendInput,\eta */
@@ -99,39 +101,39 @@ RShift::RCtrl
 
     ; /* Ctrl-Option-LaTeX */
 
->+{::SendInput,\{  \\}", "{left}", "{left}", "{left}
->+}::SendInput,\overbrace{  }", "{left}","{left}
->+<+;::SendInput,[]{left}
->+"::SendInput,[]{left}
+>+{::SendInput,\{`{}\{`}}{left 2}
+>+}::SendInput,\stackrel{`{}  {`}}{left 2}
+<+>^;::SendInput,[]{left}
+>+"::SendInput,{`{}{`}}{left}
 >+<::SendInput,\leq
 >+>::SendInput,\geq
 >+?::SendInput,\text{`{}  {`}}{left 2}
 
-<+>^a::SendInput,\forall
+<+>^A::SendInput,\forall
 	; /* opt-shift-b not mappable */
-<+>^c::SendInput,\bigcap
-<+>^d::SendInput,\int
-<+>^e::SendInput,\varepsilon
+<+>^C::SendInput,\bigcap
+<+>^D::SendInput,\int
+<+>^E::SendInput,\varepsilon
 	; /* opt-shift-f not mappable */
-<+>^G::SendInput,\frac{  }{  }", "{left}", "{left}", "{left}", "{left}", "{left}", "{left}
+<+>^G::SendInput,\frac{`{}  {`}}{`{}  {`}}{left 6}
 <+>^H::SendInput,\sim
 <+>^I::SendInput,\infty
 <+>^J::SendInput,\left(
 	; /* >+J::SendInput,\left(  \\right)", "{left}","{left}","{left}","{left}","{left}","{left}","{left}","{left} */
 <+>^K::SendInput,\right)
 	; /* >+K::SendInput,\lim_{n\\to\\infty}", "{left} */
-<+>^L::SendInput,"^{}", "{left}
-<+>^M::SendInput,"_{ i = 1 }^{ n }
-<+>^N::SendInput,"$$X_{1},\\cdots,X_{n}$$
-<+>^O::SendInput,"^{\\ast}
+<+>^L::SendInput,{^}{`{}{`}}{left}
+<+>^M::SendInput,_{`{} i = 1 {`}}^{`{} n {`}}
+<+>^N::SendInput,$$X_{1},\cdots,X_{n}$$
+<+>^O::SendInput,"{^`{\ast`}}
 <+>^P::SendInput,\prod
 <+>^Q::SendInput,\implies
-<+>^R::SendInput,\mathbf{  }", "{left}","{left}
+<+>^R::SendInput,\mathbf{`{}{`}}{left 2}
 <+>^S::SendInput,\sum
 <+>^T::SendInput,\tau
 <+>^U::SendInput,\bigcup
-<+>^V::SendInput,\sqrt{}", "{left}
+<+>^V::SendInput,\sqrt{`{}{`}}{left}
 <+>^W::SendInput,\iff
 <+>^X::SendInput,\exists
 <+>^Y::SendInput,\partial
-<+>^Z::SendInput,\mathbb{  }", "{left}", "{left}
+<+>^Z::SendInput,\mathbb{`{}{`}}{left 2}
