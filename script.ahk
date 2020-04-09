@@ -75,10 +75,10 @@ RShift::RCtrl
 >+/::SendInput,{`%}
 
 	; Num Row
->+1::SendInput,\begin{aligned}`n`n\end{aligned}{up}
->+2::SendInput,\begin{cases}`n`n\end{cases}{up}
->+3::SendInput,\begin{bmatrix}`n`n\end{bmatrix}{up}
->+4::SendInput,\begin{vmatrix}`n`n\end{vmatrix}{up}
+>+1::SendInput,\begin{`{}aligned{`}}`n`n\end{`{}aligned{`}}{up}
+>+2::SendInput,\begin{`{}cases{`}}`n`n\end{`{}cases{`}}{up}
+>+3::SendInput,\begin{`{}bmatrix{`}}`n`n\end{`{}bmatrix{`}}{up}
+>+4::SendInput,\begin{`{}vmatrix{`}}`n`n\end{`{}vmatrix{`}}{up}
     ; /* >+5::SendInput,\epsilon */
     ; /* >+6::SendInput,\zeta */
     ; /* >+7::SendInput,\eta */
@@ -109,7 +109,7 @@ RShift::RCtrl
 >+"::SendInput,{`{}{`}}{left}
 >+<::SendInput,\leq
 >+>::SendInput,\geq
->+?::SendInput,\text{`{}{`}}{left 2}
+>+?::SendInput,\text{`{}  {`}}{left 2}
 
 <+>^A::SendInput,\forall
 	; /* opt-shift-b not mappable */
