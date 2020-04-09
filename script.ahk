@@ -15,6 +15,7 @@
 <+!h::SendInput,+{LEFT}
 <+!l::SendInput,+{RIGHT}
 
+
     ; Mac Keybindings
 !w::SendInput,!{F4}
 !a::SendInput,^a
@@ -41,6 +42,7 @@ RShift::RCtrl
 >+l::SendInput,_{`{}{`}}{left}
 >+;::SendInput,$${left}
 >+'::SendInput,(){left}
+<+.::SendInput,{>}
 
 	; Top Row
 >+q::SendInput,&=
