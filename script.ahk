@@ -107,7 +107,7 @@ RShift::RCtrl
 >+"::SendInput,{`{}{`}}{left}
 >+<::SendInput,\leq
 >+>::SendInput,\geq
->+?::SendInput,\text{`{}  {`}}{left 2}
+>+?::SendInput,\text{`{}{`}}{left 2}
 
 <+>^A::SendInput,\forall
 	; /* opt-shift-b not mappable */
@@ -123,12 +123,12 @@ RShift::RCtrl
 <+>^K::SendInput,\right)
 	; /* >+K::SendInput,\lim_{n\\to\\infty}", "{left} */
 <+>^L::SendInput,{^}{`{}{`}}{left}
-<+>^M::SendInput,_{`{} i = 1 {`}}^{`{} n {`}}
-<+>^N::SendInput,$$X_{1},\cdots,X_{n}$$
+<+>^M::SendInput,_{`{} i = 1 {`}}{^}{`{} n {`}}
+<+>^N::SendInput,$$X_{`{}1{`}},\cdots,X_{`{}n{`}}$$
 <+>^O::SendInput,"{^`{\ast`}}
 <+>^P::SendInput,\prod
 <+>^Q::SendInput,\implies
-<+>^R::SendInput,\mathbf{`{}{`}}{left 2}
+<+>^R::SendInput,\mathbf{`{}{`}}{left}
 <+>^S::SendInput,\sum
 <+>^T::SendInput,\tau
 <+>^U::SendInput,\bigcup
@@ -136,4 +136,4 @@ RShift::RCtrl
 <+>^W::SendInput,\iff
 <+>^X::SendInput,\exists
 <+>^Y::SendInput,\partial
-<+>^Z::SendInput,\mathbb{`{}{`}}{left 2}
+<+>^Z::SendInput,\mathbb{`{}{`}}{left}
