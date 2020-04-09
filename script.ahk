@@ -28,6 +28,7 @@ CapsLock::Ctrl
 
 AppsKey::RShift
 RShift::RCtrl
+>+BS::SendInput,^{BS}
 
 	; Home Row
 >+a::SendInput,\alpha
@@ -56,8 +57,8 @@ RShift::RCtrl
 >+o::SendInput,\omega
 >+p::SendInput,\pi
 >+[::SendInput,\subseteq
->+]::SendInput,\\{down}
->+\::SendInput,\\{down}
+>+]::SendInput,\\`n
+>+\::SendInput,\\`n
 >+|::SendInput,\mid
 
 
@@ -70,15 +71,16 @@ RShift::RCtrl
 	; b is not mappable
 	; n is not mappable
 >+m::SendInput,\mu
->+,::SendInput,\cdots
->+.::SendInput,\in
->+/::SendInput,{`%}
+>^,::SendInput,\cdots
+>^.::SendInput,\in
+>^/::SendInput,{`%}
+
 
 	; Num Row
 >+1::SendInput,\begin{`{}aligned{`}}`n`n\end{`{}aligned{`}}{up}
 >+2::SendInput,\begin{`{}cases{`}}`n`n\end{`{}cases{`}}{up}
 >+3::SendInput,\begin{`{}bmatrix{`}}`n`n\end{`{}bmatrix{`}}{up}
->+4::SendInput,\begin{`{}vmatrix{`}}`n`n\end{`{}vmatrix{`}}{up}
+>+4::SendInput,\begin{`{}vmatrix{`}}`n`n\end{`{}vmatrix{`}{up}
     ; /* >+5::SendInput,\epsilon */
     ; /* >+6::SendInput,\zeta */
     ; /* >+7::SendInput,\eta */
