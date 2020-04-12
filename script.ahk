@@ -115,7 +115,7 @@ RShift::RCtrl
 
 <+>^A::SendInput,\forall
 	; /* opt-shift-b not mappable */
-<+>^C::SendInput,\bigcap
+<+>^C::SendInput,\mathcal{`{}{`}}{left}
 <+>^D::SendInput,\int
 <+>^E::SendInput,\varepsilon
 	; /* opt-shift-f not mappable */
