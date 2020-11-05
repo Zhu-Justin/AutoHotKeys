@@ -26,6 +26,9 @@
 !v::SendInput,^v
 CapsLock::Ctrl
 
+LCtrl::LAlt
+LAlt::LCtrl
+
 AppsKey::RShift
 RShift::RCtrl
 >+BS::SendInput,^{BS}
